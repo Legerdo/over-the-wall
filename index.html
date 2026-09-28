@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Over the Wall - 1:1 Backyard Artillery Duel</title>
+  <meta name="description" content="A tiny turn-based artillery duel: read the wind, hold to charge, release to lob it over the wall.">
+  <meta name="theme-color" content="#1a100b">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="stage">
+    <canvas id="game" tabindex="0" role="application"
+      aria-label="Over the Wall. Hold mouse, touch or Space to charge power and release to throw over the wall. Keys 1 to 4 select a special. Escape pauses, M toggles sound. Arrow keys and Enter navigate menus."></canvas>
+  </main>
+  <p id="rotate-hint" aria-hidden="true">가로 화면으로 돌리면 더 크게 볼 수 있어요</p>
+  <div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <noscript>This game needs JavaScript enabled.</noscript>
+
+  <script src="js/util.js"></script>
+  <script src="js/balance.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/characters.js"></script>
+  <script src="js/fx.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
